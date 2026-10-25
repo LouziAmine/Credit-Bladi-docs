@@ -10,6 +10,14 @@ and context a developer, tester, or manager needs to find the right repo.
 
 **Current version: 2.1.0**, on the `release/2.1.0` branch of both repos.
 
+## Live demo in your browser (no install)
+
+Open the app directly, with no backend and no setup:
+
+**https://louziamine.github.io/---Bladi-Credit-Portal---/**
+
+This runs the frontend on its own with an in-browser backend, so every bit of data stays in your browser and nothing is sent to a server. You get the four journeys (mortgage credit, company investment, client portal, administration) with the same seeded accounts as the real app. Sign in as `admin` / `admin123`; every other manager uses the password `demo123`. The "DÉMO" bar at the bottom lists all accounts and lets you switch from one responsible to the next in one click. It can also be installed as an app and works offline.
+
 ## Repos
 
 | Repo | Role | Stack | Branch |
@@ -87,7 +95,7 @@ Each repo's `docs/testing.md` explains how to run them and what each report show
 - **Tester**: both repos ship a `./run-tests.sh` interactive menu (unit, integration/E2E,
   performance, security scans — SAST/SCA/DAST). The backend's `postman/` folder holds the
   ready-to-import Postman collection and environment.
-- **Manager / PO**: start with the demo video above, then the backend's
+- **Manager / PO**: try the [live demo](https://louziamine.github.io/---Bladi-Credit-Portal---/) first, then watch the demo video above, then read the backend's
   `docs/mortgage-credit-workflow.md` and `docs/enterprise-credit-workflow.md` for the business rules, and
   the frontend's `docs/business-workflow.md` for the screen-by-screen journeys.
 
